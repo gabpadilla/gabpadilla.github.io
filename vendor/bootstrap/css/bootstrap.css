@@ -487,11 +487,17 @@ mark,
 }
 */
 
+@media only screen and (width: 360px) {
+  .img-fluid2 {
+      min-width: 100%;
+      margin-top: 420px!important;
+    }
+}
 
 @media only screen and (width: 1280px) {
   .img-fluid2 {
       min-width: 100%;
-      margin-top: -70px!important;
+      margin-top: 460px!important;
     }
 }
 
@@ -499,7 +505,7 @@ mark,
 @media only screen and (width: 1920px) {
   .img-fluid2 {
       min-width: 100%;
-      margin-top: 100px!important;
+      margin-top: 640px!important;
     }
 }
 
