@@ -480,10 +480,27 @@ mark,
   min-width: 100%;
 }
 
-
+/*
 .img-fluid2 {
   min-width: 100%;
   margin-top: -80px!important;
+}
+*/
+
+
+@media only screen and (width: 1280px) {
+  .img-fluid2 {
+      min-width: 100%;
+      margin-top: -70px!important;
+    }
+}
+
+
+@media only screen and (width: 1920px) {
+  .img-fluid2 {
+      min-width: 100%;
+      margin-top: 100px!important;
+    }
 }
 
 
