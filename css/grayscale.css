@@ -1,23 +1,19 @@
 /*!
- * Start Bootstrap - Grayscale v5.0.8 (https://startbootstrap.com/template-overviews/grayscale)
+ * Start Bootstrap - Grayscale v5.0.9 (https://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
 #mainNav {
   min-height: 56px;
-  background-color: #00000054;
+  background-color: #fff;
 }
 
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: rgb(255, 255, 255);
+  color: #64a19d;
+  border: 1px solid #64a19d;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -25,7 +21,7 @@
 }
 
 #mainNav .navbar-brand {
-  color: #fff;
+  color: #161616;
   font-weight: 700;
   padding: .9rem 0;
 }
@@ -47,7 +43,6 @@
     padding-bottom: 0;
     border-bottom: none;
     background-color: transparent;
-    -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -55,7 +50,6 @@
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
-    -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.5);
@@ -67,7 +61,7 @@
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #ffffffB3;
+    background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616;
@@ -93,24 +87,21 @@
 .masthead {
   position: relative;
   width: 100%;
-  height: 100%;
-  min-height: 100% !important;
-  padding: 0rem 0;
+  height: auto;
+  min-height: 35rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(100%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/00.jpg");
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 100%, #161616 75%), url("../img/00.jpg");
-  background-position: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 100%, #161616 75%), url("../img/00.jpg");  background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
 .masthead h1 {
-font-family: 'Graduate', cursive;
-          letter-spacing: -0.5rem;
-  font-size: 6.5rem;
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
   line-height: 2.5rem;
-  letter-spacing: -0.3rem;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 2));
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -127,26 +118,27 @@ font-family: 'Graduate', cursive;
   }
 }
 
+
+/**/
+
+
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
     padding: 0;
   }
   .masthead h1 {
-font-family: 'Graduate', cursive;
-
-          letter-spacing: 0px;
     font-size: 6.5rem;
-    line-height: 200px;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
   }
   .masthead h2 {
-    max-width: 80rem;
+    max-width: 30rem;
     font-size: 1.25rem;
   }
 }
 
 .btn {
-  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   font-family: 'Varela Round';
@@ -157,7 +149,7 @@ font-family: 'Graduate', cursive;
 }
 
 .btn-primary {
-  background-color: #000;
+  background-color: #64a19d;
 }
 
 .btn-primary:hover {
@@ -174,21 +166,30 @@ font-family: 'Graduate', cursive;
 }
 
 .about-section {
-  padding-top: 3.3rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
+  padding-top: 5rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  min-height: 1000px !important;
 }
 
 .about-section p {
   margin-bottom: 5rem;
+  width: 100% !important;
 }
 
 .projects-section {
-  padding: 2rem 0;
+  margin-top: 20px;
+    min-height: 900px !important;
+
 }
 
 .projects-section .featured-text {
   padding: 2rem;
+}
+
+@media only screen and (width: 1920px) {
+    .projects-section .featured-text {
+      padding: 6rem 0;
+    }
 }
 
 @media (min-width: 992px) {
@@ -225,7 +226,6 @@ font-family: 'Graduate', cursive;
 }
 
 .signup-section .form-inline input {
-  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
@@ -266,10 +266,10 @@ font-family: 'Graduate', cursive;
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(255, 255, 255, 0.27);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
   line-height: 3rem;
-  color: rgba(255, 255, 255, 255);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .contact-section .social a:hover {
@@ -309,3 +309,65 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+
+
+/* pixel 2 */
+
+@media (min-width: 411px) {
+    .masthead {
+    height: 823px !important;
+}
+
+@media only screen and (width: 411px){
+    .about-section {
+    margin-top: -3rem;
+    min-height: 900px !important;
+  }
+
+/* iphone5 */
+
+@media (min-width: 320px) {
+    .masthead {
+    width: 100% !important;
+    height: 568px !important;
+}
+
+@media only screen and (width: 320px){
+    .about-section {
+    margin-top: -3rem;
+     background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+    min-height: 900px !important;
+  }
+
+
+/* iphone 6/7/8 */
+
+
+@media (min-width: 375px) {
+    .masthead {
+    height: 667 !important;
+}
+
+@media only screen and (width: 375px){
+    .about-section {
+    margin-top: -3rem;
+     background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+    min-height: 900px !important;
+  }
+
+/* iphone 6/7/8 plus */
+
+
+@media (min-width: 414px) {
+    .masthead {
+    height: 736 !important;
+}
+
+@media only screen and (width: 375px){
+    .about-section {
+    margin-top: -3rem;
+     background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+    min-height: 900px !important;
+  }
+
+
