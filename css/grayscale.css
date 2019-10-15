@@ -311,11 +311,14 @@ footer {
 }
 
 
+
+
+
 /* pixel 2 */
 
 @media (min-width: 411px) {
     .masthead {
-    height: 823px !important;
+    height: 623px !important;
 }
 
 @media only screen and (width: 411px){
